@@ -5,7 +5,6 @@
 // set event listeners to update state and DOM
 //User inputs stored as varibales
 const inputSection = document.getElementById('input-section');
-const 
 const input1 = document.getElementById('input-one'); 
 const input2 = document.getElementById('input-two');
 const input3 = document.getElementById('input-three');
@@ -16,8 +15,7 @@ const input7 = document.getElementById('input-seven');
 const input8 = document.getElementById('input-eight');
 const input9 = document.getElementById('input-nine');
 const button = document.getElementById('button');
-
-const madlib = document.getElementById('madlib')
+const madLib = document.getElementById('mad-lib');
 
 
 //Where the user input goes after the button is clicked 
@@ -45,11 +43,9 @@ button.addEventListener('click', () => {
     result7.textContent = input7.value;
     result8.textContent = input8.value;
     result9.textContent = input9.value;
-  
 
-    madlib.style.toggle('visible');
-    inputSection.style.toggle('hidden');
+    inputSection.style.display = 'none';
+    madLib.style.display = 'block';
 
 });
-
 
