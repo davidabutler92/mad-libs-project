@@ -4,16 +4,21 @@
 
 // set event listeners to update state and DOM
 //User inputs stored as varibales
-const input1 = document.getElementById ('input-one'); 
-const input2 = document.getElementById ('input-two');
-const input3 = document.getElementById ('input-three');
-const input4 = document.getElementById ('input-four');
-const input5 = document.getElementById ('input-five');
-const input6 = document.getElementById ('input-six');
-const input7 = document.getElementById ('input-seven');
-const input8 = document.getElementById ('input-eight');
-const input9 = document.getElementById ('input-nine');
-const button = document.getElementById ('button');
+const inputSection = document.getElementById('input-section');
+const 
+const input1 = document.getElementById('input-one'); 
+const input2 = document.getElementById('input-two');
+const input3 = document.getElementById('input-three');
+const input4 = document.getElementById('input-four');
+const input5 = document.getElementById('input-five');
+const input6 = document.getElementById('input-six');
+const input7 = document.getElementById('input-seven');
+const input8 = document.getElementById('input-eight');
+const input9 = document.getElementById('input-nine');
+const button = document.getElementById('button');
+
+const madlib = document.getElementById('madlib')
+
 
 //Where the user input goes after the button is clicked 
 const result1 = document.getElementById('result-1');
@@ -26,7 +31,10 @@ const result7 = document.getElementById('result-7');
 const result8 = document.getElementById('result-8');
 const result9 = document.getElementById('result-9');
 
-button.addEventListener('click', () => {  //add click funciton to button D.B.
+button.addEventListener('click', () => { 
+  
+
+  //add click funciton to button D.B.
   // console.log('clicked!'); validate click function 
     result1.textContent = input1.value;
     result2.textContent = input2.value;
@@ -38,10 +46,10 @@ button.addEventListener('click', () => {  //add click funciton to button D.B.
     result8.textContent = input8.value;
     result9.textContent = input9.value;
   
+
+    madlib.style.toggle('visible');
+    inputSection.style.toggle('hidden');
+
 });
-
-const madlib = document.getElementById ('madlib');
-
-madlib.style.display = "none"
 
 
