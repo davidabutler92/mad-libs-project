@@ -1,23 +1,22 @@
 
 body {
     --header-height: 80px;
-  
     --gutter: 30px;
     --footer-height: 25px;
-    
     font-family: 'Titillium Web', sans-serif;
-   
 }
 
 main {  
-    background-image: url("./pikachu.jpg");
-    background-image: ;
-    background-attachment: fixed;
+    background-color: rgb( 244, 220, 38);
+    background-image: url(./pikachu.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
 }
 
 section {
@@ -28,13 +27,12 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+  
 }
 
 header {
     display: flex;
     justify-content: flex-end;
-    background-image: url('./pikachu.jpg');
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
@@ -52,6 +50,54 @@ h2 {
     font-weight: bold;
 }
 
+
+header img {
+    height: var(--header-height);
+}
+
+
+content {
+    width: 100%;
+}
+
+p {
+    margin: var(--gutter);
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: var(--footer-height);
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color3);
+    box-shadow: var(--shadow);
+}
+
+@keyframes pulse {
+    20% {
+        transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+    }
+    
+    40% {
+        transform: rotate3d(10, 10, -10, 50deg) scale(1);
+    }
+    
+    60% {
+        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
+    }
+    
+    80% {
+        transform: rotate3d(10, 10, 10, 50deg) scale(1);
+    }
+    
+}
+
+
+/* classes ===========================================================*/
+
+
 .gutter-right {
     margin-right: 20px;
 }
@@ -63,53 +109,10 @@ h2 {
     animation: pulse 5s infinite ease-in-out;
 }
 
-header img {
-    height: var(--header-height);
+.madlib {
+    display: none;
 }
 
-
-
-content {
-    width: 100%;
+.input-section {
+    display: visible;
 }
-
-p {
-    margin: var(--gutter);
-}
-  
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: var(--footer-height);
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
-}
-  
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
-
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
-    }
-
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
-
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
-
-  }
-  .madlib {
-      font-size: x-large ;
-  }
-
-  /* .madlib {
-      display: none;
-  } */
