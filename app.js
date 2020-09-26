@@ -12,6 +12,6 @@ const input6 = document.getElementById ('input-6');
 const input7 = document.getElementById ('input-7');
 const input8 = document.getElementById ('input-8');
 const input9 = document.getElementById ('input-9');
-const button =
+const button = document.getElementById ('button')
 
 
