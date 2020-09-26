@@ -37,6 +37,11 @@ button.addEventListener('click', () => {  //add click funciton to button D.B.
     result7.textContent = input7.value;
     result8.textContent = input8.value;
     result9.textContent = input9.value;
+  
 });
+
+const madlib = document.getElementById ('madlib');
+
+madlib.style.display = "none"
 
 

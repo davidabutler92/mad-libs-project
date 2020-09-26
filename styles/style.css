@@ -11,6 +11,8 @@ body {
 
 main {  
     background-image: url("./pikachu.jpg");
+    background-image: ;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +34,7 @@ section {
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-image: url('./pikachu.jpg');
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
@@ -68,7 +70,7 @@ header img {
 
 
 content {
-    width: 80%;
+    width: 100%;
 }
 
 p {
