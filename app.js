@@ -49,3 +49,11 @@ button.addEventListener('click', () => {
 
 });
 
+const done = document.getElementById('done');
+const main = document.getElementById('main');
+done.addEventListener('cick', () => {
+
+    main.location.reload();
+
+});
+
